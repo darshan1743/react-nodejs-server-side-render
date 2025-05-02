@@ -27,7 +27,7 @@ const languages = [
 export default function Navbar() {
   return (
     <ul className="nav">
-      {languages.map(({ name, param }) => (
+      {/* {languages.map(({ name, param }) => (
         <li key={param}>
           <NavLink
             activeStyle={{ fontWeight: "bold" }}
@@ -36,10 +36,17 @@ export default function Navbar() {
             {name}
           </NavLink>
         </li>
-      ))}
+      ))} */}
       <li>
         <NavLink activeStyle={{ fontWeight: "bold" }} to={`/items`}>
           {"items"}
+        </NavLink>
+        <NavLink activeStyle={{ fontWeight: "bold" }} to={`/cart`}>
+          {"Cart"}
+        </NavLink>
+
+        <NavLink activeStyle={{ fontWeight: "bold" }} to={`/order`}>
+          {"Orders"}
         </NavLink>
       </li>
     </ul>

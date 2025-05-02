@@ -2,6 +2,8 @@ import Home from './Home'
 import Grid from './Grid'
 import { fetchPopularRepos } from './api'
 import Items from './Items'
+import Orders from './Orders'
+import User from './User'
 
 const routes =  [
   {
@@ -16,6 +18,18 @@ const routes =  [
   {
     path: '/items',
     component: Items
+  },
+  {
+    path: '/cart',
+    component: Items
+  },
+  {
+    path: '/order',
+    component: Orders
+  },
+  {
+    path: '/user',
+    component: User
   }
 ]
 
